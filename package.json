@@ -1,0 +1,15 @@
+{
+  "devDependencies": {
+    "@expo/webpack-config": "^18.1.3",
+    "cypress": "^13.6.1",
+    "cypress-cucumber-preprocessor": "^4.3.1"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true,
+    "step_definitions": "cypress/e2e/kx"
+  },
+  "scripts": {
+    "cypress:ui": "npx cypress open",
+    "cypress:open": "npx cypress run --spec cypress/e2e/kx.feature --browser chrome"
+  }
+}
